@@ -1,20 +1,20 @@
 #app {
     display: grid;
-    grid-template-columns: 48.75% 51.25%;
+    grid-template-columns: 25% 75%;
     height: 100vw;
     overflow: hidden;
 }
 
 main {
     overflow: auto;
-    margin: 4rem;
+    margin: 4rem 4rem 4rem 0;
     background-color: var(--shape-body);
-    border-radius: 12px;
+    border-radius: 12px 12px 12rem 0;
 
 
     & .main-container {
-        background-color: var(--shape-body);
-        border-radius: 12px;
+        border: 10px solid var(--shape-background);
+        border-radius: 12px 0 0 12px;
 
         & .main-content {
             display: flex;
@@ -29,7 +29,7 @@ main {
 
 aside {
     position: relative;
-    padding: 4rem;
+    padding: 4rem 0 0 4rem;
 
 
     header {
@@ -50,12 +50,10 @@ aside {
         color: var(--text-heading);
     }
 
-    & aside-container {
-        max-width: 31rem;
-        margin-right: auto;
-    }
-
-    .cupcake-image {
-        border-radius: 12px;
+    .aside-container {
+        width: fit-content;
+        max-height: 747px;
+        border: 10px solid var(--shape-background);
+        border-radius: 12px 0 0 12px;
     }
 }

@@ -47,7 +47,6 @@
 }
 
 body {
-    background-color: var(--shape-background);
     font: var(--body-sm);
     color: var(--input-placeholder);
 }
