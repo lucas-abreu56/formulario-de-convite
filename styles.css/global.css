@@ -49,6 +49,8 @@
 body {
     font: var(--body-sm);
     color: var(--input-placeholder);
+    background-color: var(--shape-background);
+    overflow: hidden;
 }
 
 #app {

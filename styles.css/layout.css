@@ -1,7 +1,6 @@
 #app {
     display: grid;
-    grid-template-columns: 25% 75%;
-    height: 100vw;
+    grid-template-columns: 32.79% 67.21%;
     overflow: hidden;
 }
 
@@ -9,22 +8,16 @@ main {
     overflow: auto;
     margin: 4rem 4rem 4rem 0;
     background-color: var(--shape-body);
-    border-radius: 12px 12px 12rem 0;
+    border-radius: 0 12px 12px 12px;
+}
+.main-container {
+    border: 10px solid var(--shape-background);
 
-
-    & .main-container {
-        border: 10px solid var(--shape-background);
-        border-radius: 12px 0 0 12px;
-
-        & .main-content {
-            display: flex;
-            flex-direction: column;
-            margin: 5rem 8.125rem 5rem 8.125rem;
-        }
+    & .main-content {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 8.125rem 5rem 8.125rem;
     }
-
-
-
 }
 
 aside {
@@ -52,8 +45,9 @@ aside {
 
     .aside-container {
         width: fit-content;
-        max-height: 747px;
+        height: 46.563rem;
         border: 10px solid var(--shape-background);
         border-radius: 12px 0 0 12px;
+        margin-left: auto;
     }
 }
