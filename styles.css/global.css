@@ -28,20 +28,45 @@
     --text-heading: #F9F9F9;
 
     --font-primary: "Leckerli One", cursive;
-    --logo: 400 2.25rem/auto var(--font-primary);
+    --logo: 400 2.25rem var(--font-primary);
 
     --font-secondary: "Baloo 2", sans-serif;
-    --heading-md: 700 1.75rem/auto var(--font-secondary);
-    --heading-sm: 700 1.125rem/auto var(--font-secondary);
+    --heading-md: 700 1.75rem var(--font-secondary);
+    --heading-sm: 700 1.125rem var(--font-secondary);
 
     --font-tertiary: "Open Sans", sans-serif;
-    --body-md: 600 1rem/auto var(--font-tertiary);
-    --body-sm: 600 0.875rem/auto var(--font-tertiary);
-    --body-xs: 600 0.75rem/auto var(--font-tertiary);
+    --body-md: 500 1rem var(--font-tertiary);
+    --body-sm: 500 0.875rem var(--font-tertiary);
+    --body-xs: 500 0.75rem var(--font-tertiary);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--shape-background);
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+}
+
+#app {
+    line-height: auto;
+}
+
+h1 {
+    font: var(--logo);
+    color: var(--pink);
+}
+
+h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+h3 {
+    font: var(--heading-sm);
+    color: var(--text-heading);
 }
