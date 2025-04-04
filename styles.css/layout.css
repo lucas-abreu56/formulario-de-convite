@@ -4,3 +4,58 @@
     height: 100vw;
     overflow: hidden;
 }
+
+main {
+    overflow: auto;
+    margin: 4rem;
+    background-color: var(--shape-body);
+    border-radius: 12px;
+
+
+    & .main-container {
+        background-color: var(--shape-body);
+        border-radius: 12px;
+
+        & .main-content {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 8.125rem 5rem 8.125rem;
+        }
+    }
+
+
+
+}
+
+aside {
+    position: relative;
+    padding: 4rem;
+
+
+    header {
+        position: absolute;
+        margin: 2rem;
+
+        img {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin-bottom: .25rem;
+        }
+    }
+
+    p {
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+
+    & aside-container {
+        max-width: 31rem;
+        margin-right: auto;
+    }
+
+    .cupcake-image {
+        border-radius: 12px;
+    }
+}
