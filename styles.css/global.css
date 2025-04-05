@@ -47,14 +47,15 @@
 }
 
 body {
+    overflow: hidden;
     font: var(--body-sm);
     color: var(--input-placeholder);
     background-color: var(--shape-background);
-    overflow: hidden;
 }
 
-#app {
-    line-height: auto;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
